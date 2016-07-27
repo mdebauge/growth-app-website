@@ -28,7 +28,7 @@ define('SECRET_ACCESS_TOKEN', 'thefadiman');
  *
  * @var string
  */
-define('REMOTE_REPOSITORY', 'https://github.com/markomarkovic/simple-php-git-deploy.git');
+define('REMOTE_REPOSITORY', 'https://github.com/mdebauge/growth-app-website.git');
 
 /**
  * The branch that's being deployed.
@@ -44,7 +44,7 @@ define('BRANCH', 'master');
  *
  * @var string Full path including the trailing slash
  */
-define('TARGET_DIR', '/tmp/simple-php-git-deploy/');
+define('TARGET_DIR', '/home/bigboyllc/growth.myyawnis.com/');
 
 /**
  * Whether to delete the files that are not in the repository but are on the
