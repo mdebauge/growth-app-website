@@ -9,14 +9,18 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+$blue: #3D61FE;
+$green: #20F288;
 
 html {
     color: black;
     font-size: 1em;
     line-height: 1.4;
+    body {
+        background: $blue;
+    }
 }
-$blue: #3D61FE;
-$green: #20F288;
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -289,17 +293,9 @@ textarea {
 }
 /*Not neccessary in your layout -- only here for the demo page layout styles*/
 
-.full {width:100%;height:100%;display:inline-block;float:left;position:relative;}
+.full {transform:scale(0.85);width:100%;height:100%;display:inline-block;float:left;position:relative;}
 .half.dark {background-color:#ffa633;}
 .iphone-container {width:100%;}
-
-
-/*Styles for Dark version*/
-
-.dark .phone-shape {border-color:#444;background-color:#333;box-shadow:-47px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.6);}
-.dark .camera, .dark .circle, .dark .speaker, .dark .circle-button {background-color:#222;}
-.dark .buttons, .dark .button.last {background-color:#333;box-shadow:-45px 0 0 rgba(0,0,0,0.075), 0 0 0 2px rgba(0,0,0,0.6);}
-
 
 /*Default Phone Color Styles - White*/
 
@@ -408,7 +404,7 @@ textarea {
     transition: transform 0.8s ease;
 }
 .intro {
-  background: $blue;
+  background: transparent;
   img {
     width: 40%;
     margin-left: 30%;
