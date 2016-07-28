@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#fullpage").fullpage({onLeave:function(a,e,r){var o=$(this);1==a&&"down"==r?$(".bar").addClass("rotate"):2==a&&"up"==r&&$(".bar").removeClass("rotate"),2==a&&"down"==r?$(".bar").removeClass("rotate"):3==a&&"up"==r&&$(".bar").addClass("rotate"),3==a&&"down"==r?$(".bar").addClass("rotate"):4==a&&"up"==r&&$(".bar").removeClass("rotate")}})});
