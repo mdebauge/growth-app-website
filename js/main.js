@@ -6,6 +6,7 @@ $(document).ready(function() {
             //after leaving section 2
             if(index == 1 && direction =='down'){
                 $('.bar').addClass('rotate');
+                // $('.half').addClass('move-phone-down');
             }
 
             else if(index == 2 && direction == 'up'){
@@ -30,4 +31,40 @@ $(document).ready(function() {
         }
     });
 });
+
+
+$('#contact').click(function() {
+    $('.contact-form').addClass('move-contact-form');
+});
+$('.contact-form img').click(function() {
+    $('.contact-form').removeClass('move-contact-form');
+});
+
+$(document).ready(function(){
+                           
+ $(window).resize(function(){
+
+  $('.iphone-container').css({
+   position:'absolute',
+   left: ($('.light').width() 
+     - $('.iphone-container').outerWidth())/2,
+   top: ($('.light').height() 
+     - $('.iphone-container').outerHeight())/2
+  });
+
+  $('.iphone-container').css({
+   position:'absolute',
+   left: ($('.dark').width() 
+     - $('.iphone-container').outerWidth())/2,
+   top: ($('.dark').height() 
+     - $('.iphone-container').outerHeight())/2
+  });
+
+ });
+ 
+ $(window).resize();
+
+});
+
+
 
