@@ -8,7 +8,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 html {
-  color: #222;
+  color: black;
   font-size: 1em;
   line-height: 1.4; }
 
@@ -214,9 +214,14 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+.row {
+  width: 100%;
+  margin: 10px 30px;
+  clear: both; }
+
 /*Not neccessary in your layout -- only here for the demo page layout styles*/
-.third {
-  width: 50%;
+.full {
+  width: 100%;
   height: 100%;
   display: inline-block;
   float: left;
@@ -337,36 +342,65 @@ textarea {
 #contact {
   position: fixed;
   z-index: 998;
-  right: 5%;
-  top: 5%;
-  color: black; }
+  right: 40px;
+  top: 10px;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
+  transition: color 0.4s linear; }
   #contact:hover {
     cursor: pointer; }
+
+.blue {
+  color: #3D61FE !important;
+  transition: color 0.4s linear; }
 
 .contact-form {
   position: fixed;
   z-index: 999;
   width: 30vw;
   height: 100vh;
-  right: -30vw;
+  right: calc(-30vw - 5px);
+  border-left: solid 5px #20F288;
   top: 0;
-  background: red;
-  transition: right 0.8s ease; }
-  .contact-form img {
+  background: white;
+  transition: right 0.6s ease; }
+  .contact-form form p {
+    text-transform: uppercase;
+    color: #3D61FE;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important; }
+  .contact-form #cross img {
     width: 30px;
     height: auto;
     position: absolute;
-    top: calc(50% - 15px);
-    right: calc(50% - 15px);
+    top: 30px;
+    right: 30px;
     transition: transform 0.15s ease; }
-    .contact-form img:hover {
+    .contact-form #cross img:hover {
       cursor: pointer;
       transform: scale(1.1);
       transition: transform 0.15s ease; }
+  .contact-form #contact-copy {
+    color: #3D61FE;
+    margin-top: 80px;
+    padding: 0 25px; }
+    .contact-form #contact-copy h1 {
+      line-height: 1;
+      font-size: 3rem; }
+    .contact-form #contact-copy p {
+      font-size: 1.4rem;
+      line-height: 1.3; }
+    .contact-form #contact-copy img {
+      width: 150px;
+      margin-left: calc(50% - 75px); }
 
 .move-contact-form {
   right: 0;
-  transition: right 0.8s ease; }
+  transition: right 0.6s ease; }
 
 .bar {
   position: fixed;
@@ -383,8 +417,9 @@ textarea {
 
 .intro {
   background: #3D61FE; }
-  .intro h1 {
-    color: white; }
+  .intro img {
+    width: 40%;
+    margin-left: 30%; }
 
 h1 {
   text-align: center; }

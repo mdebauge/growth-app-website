@@ -11,10 +11,12 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: black;
     font-size: 1em;
     line-height: 1.4;
 }
+$blue: #3D61FE;
+$green: #20F288;
 
 /*
  * Remove text-shadow in selection highlight:
@@ -280,9 +282,14 @@ textarea {
         page-break-after: avoid;
     }
 }
+.row {
+    width: 100%;
+    margin: 10px 30px;
+    clear: both;
+}
 /*Not neccessary in your layout -- only here for the demo page layout styles*/
 
-.third {width:50%;height:100%;display:inline-block;float:left;position:relative;}
+.full {width:100%;height:100%;display:inline-block;float:left;position:relative;}
 .half.dark {background-color:#ffa633;}
 .iphone-container {width:100%;}
 
@@ -312,32 +319,48 @@ textarea {
 .button-three {height: 40px;width: 3px;left: -7px;top: 165px;border-radius: 4px 0 0 4px;}
 .button-four {height: 40px;width: 3px;right: -7px;top: 110px;border-radius: 0 4px 4px 0;}
 
-
 #contact {
     position: fixed;
     z-index: 998;
-    right: 5%;
-    top: 5%;
-    color: black;
+    right: 40px;
+    top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+    transition: color 0.4s linear;
     &:hover {
         cursor:pointer;
     }
+}
+.blue {
+    color: $blue !important;
+    transition: color 0.4s linear;
 }
 .contact-form {
     position: fixed;
     z-index: 999;
     width: 30vw;
     height: 100vh;
-    right: -30vw;
+    right: calc(-30vw - 5px);
+    border-left: solid 5px $green;
     top: 0;
-    background: red;
-    transition: right 0.8s ease;
-    img {
+    background: white;
+    transition: right 0.6s ease;
+    form p {
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+        -webkit-margin-before: 0em !important;
+        -webkit-margin-after: 0em !important;
+    }
+    #cross img {
         width: 30px;
         height: auto;
         position: absolute;
-        top: calc(50% - 15px);
-        right: calc(50% - 15px);
+        top: 30px;
+        right: 30px;
         transition: transform 0.15s ease;
         &:hover {
             cursor:pointer;
@@ -345,10 +368,28 @@ textarea {
             transition: transform 0.15s ease;
         }
     }
+     #contact-copy {
+        color: $blue;
+        margin-top: 80px;
+        padding: 0 25px;
+        h1 {
+            line-height: 1;
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 1.3;
+        }
+        img {
+            width: 150px;
+
+            margin-left: calc(50% - 75px);
+        }
+    }
 }
 .move-contact-form {
     right: 0;
-    transition: right 0.8s ease;
+    transition: right 0.6s ease;
 }
 .move-phone-down {
 
@@ -367,9 +408,10 @@ textarea {
     transition: transform 0.8s ease;
 }
 .intro {
-  background: #3D61FE;
-  h1 {
-    color: white;
+  background: $blue;
+  img {
+    width: 40%;
+    margin-left: 30%;
   }
 }
 h1 {

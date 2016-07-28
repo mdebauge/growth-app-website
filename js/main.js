@@ -6,11 +6,13 @@ $(document).ready(function() {
             //after leaving section 2
             if(index == 1 && direction =='down'){
                 $('.bar').addClass('rotate');
+                $('#contact').addClass('blue');
                 // $('.half').addClass('move-phone-down');
             }
 
             else if(index == 2 && direction == 'up'){
                 $('.bar').removeClass('rotate');
+                $('#contact').removeClass('blue');
             }
 
             if(index == 2 && direction =='down'){
