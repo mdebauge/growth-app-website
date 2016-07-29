@@ -5,30 +5,29 @@ $(document).ready(function() {
 
             //after leaving section 2
             if(index == 1 && direction =='down'){
-                $('.bar').addClass('rotate');
-                $('#contact').addClass('blue');
-                // $('.half').addClass('move-phone-down');
+                $('.phone-shape').addClass('move-phone-up');
+                $('.intro').addClass('invis');
             }
 
             else if(index == 2 && direction == 'up'){
-                $('.bar').removeClass('rotate');
-                $('#contact').removeClass('blue');
+                $('.phone-shape').removeClass('move-phone-up');
+                $('.intro').removeClass('invis');
             }
 
             if(index == 2 && direction =='down'){
-                $('.bar').removeClass('rotate');
+
             }
 
             else if(index == 3 && direction == 'up'){
-                $('.bar').addClass('rotate');
+
             }
 
             if(index == 3 && direction =='down'){
-                $('.bar').addClass('rotate');
+
             }
 
             else if(index == 4 && direction == 'up'){
-                $('.bar').removeClass('rotate');
+
             }
         }
     });
