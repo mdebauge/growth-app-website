@@ -461,19 +461,16 @@ textarea {
   transition: transform 0.8s ease, -webkit-transform 0.8s ease; }
 
 .section .copy {
-  opacity: 0;
   color: white;
   z-index: 888 !important;
   margin: 0;
   position: absolute;
-  top: 45%;
-  right: 41%;
-  margin-left: -59%;
-  -webkit-transform: translate(59%, -55%);
-          transform: translate(59%, -55%);
-  width: 400px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease; }
+  top: 50%;
+  right: 40%;
+  margin-left: -50%;
+  -webkit-transform: translate(60%, -50%);
+          transform: translate(60%, -50%);
+  width: 400px; }
   .section .copy h2 {
     font-size: 4rem;
     -webkit-margin-before: 0em !important;
@@ -481,18 +478,10 @@ textarea {
   .section .copy p {
     font-size: 1.2rem;
     line-height: 1.5; }
-.section .copy-opacity {
-  opacity: 1;
-  right: 40%;
-  margin-left: -60%;
-  -webkit-transform: translate(60%, -55%);
-          transform: translate(60%, -55%);
-  -webkit-transition: all 2s ease 1.3s;
-  transition: all 2s ease 1.3s; }
 
 .two img {
   position: relative;
-  bottom: -10vh;
+  bottom: -30vh;
   width: 101%;
   z-index: 1;
   opacity: 0.2; }

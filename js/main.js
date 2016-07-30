@@ -7,15 +7,19 @@ $(document).ready(function() {
             if(index == 1 && direction =='down'){
                 $('.phone-shape').addClass('move-phone-up');
                 $('.intro').addClass('invis');
-                $('.bluebar').addClass("barmove");
-                $('.copy').addClass("copy-opacity");
+
+                setTimeout(function(){
+                    $('.bluebar').addClass("barmove");
+                }, 700);
+
             }
 
             else if(index == 2 && direction == 'up'){
                 $('.phone-shape').removeClass('move-phone-up');
                 $('.intro').removeClass('invis');
-                $('.bluebar').removeClass("barmove");
-                $('.copy').removeClass("copy-opacity");
+                setTimeout(function(){
+                    $('.bluebar').removeClass("barmove");
+                }, 1000);
             }
 
             if(index == 2 && direction =='down'){
