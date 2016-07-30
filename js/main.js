@@ -7,11 +7,19 @@ $(document).ready(function() {
             if(index == 1 && direction =='down'){
                 $('.phone-shape').addClass('move-phone-up');
                 $('.intro').addClass('invis');
+
+                setTimeout(function(){
+                    $('.bluebar').addClass("barmove");
+                }, 700);
+
             }
 
             else if(index == 2 && direction == 'up'){
                 $('.phone-shape').removeClass('move-phone-up');
                 $('.intro').removeClass('invis');
+                setTimeout(function(){
+                    $('.bluebar').removeClass("barmove");
+                }, 1000);
             }
 
             if(index == 2 && direction =='down'){
