@@ -19,11 +19,17 @@ $(document).ready(function() {
             }
 
             if(index == 2 && direction =='down'){
-
+                $('.phone-shape').addClass('move-phone-left'); 
+                $('.copy').removeClass("copy-opacity");
+                $('.col-three').addClass("col-three-appear");
+                $('.bluebar').removeClass("barmove");
             }
 
             else if(index == 3 && direction == 'up'){
-
+              $('.copy').addClass("copy-opacity");
+                $('.phone-shape').removeClass('move-phone-left');
+                $('.col-three').removeClass("col-three-appear"); 
+                $('.bluebar').addClass("barmove");
             }
 
             if(index == 3 && direction =='down'){
