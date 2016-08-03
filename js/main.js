@@ -33,11 +33,11 @@ $(document).ready(function() {
             }
 
             if(index == 3 && direction =='down'){
-
+              $('.four').addClass("four-move");
             }
 
             else if(index == 4 && direction == 'up'){
-
+              $('.four').removeClass("four-move");
             }
         }
     });

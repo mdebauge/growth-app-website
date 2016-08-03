@@ -296,14 +296,6 @@ textarea {
         page-break-after: avoid;
     }
 }
-/*.row {
-    width: 70%;
-    clear: both !important;
-    margin-left: 15%;
-    float: left;
-    margin-bottom: 3%;
-    
-}*/
 .full {
     transform:scale(0.85);
     width:100%;
@@ -358,7 +350,7 @@ textarea {
 .button-three {height: 40px;width: 3px;left: -7px;top: 165px;border-radius: 4px 0 0 4px;}
 .button-four {height: 40px;width: 3px;right: -7px;top: 110px;border-radius: 0 4px 4px 0;}
 
-#contact {
+/*#contact {
     position: fixed;
     z-index: 998;
     right: 40px;
@@ -381,15 +373,7 @@ textarea {
     top: 0;
     background: white;
     transition: right 0.6s ease;
-    form p {
-        text-transform: uppercase;
-        color: $blue;
-        font-size: 0.8rem;
-        letter-spacing: 0.5px;
-        font-weight: bold;
-        -webkit-margin-before: 0em !important;
-        -webkit-margin-after: 0em !important;
-    }
+    
     form {
         color: $blue;
         p {
@@ -453,7 +437,7 @@ textarea {
 .move-contact-form {
     right: 0;
     transition: right 0.6s ease;
-}
+}*/
 .bar {
     position: fixed;
     width: 50px;
@@ -507,12 +491,9 @@ textarea {
     }
 }
 @for $i from 1 to 7 {
-  .three div:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
+  .three .col-three:nth-child(#{$i}) { transition-delay: $i * 0.1s; }
 }
 .three {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
     position: fixed;
     z-index: 4;
     top: 50%;
@@ -554,7 +535,107 @@ textarea {
         transition: all 0.8s ease;
     }
 }
+.four {
+    position: relative;
+    .row {
+        width: 550px;
+        margin: 0;
+        margin-bottom: 10px;
 
+        clear: both;
+    }
+    .col-two {
+        width: 45%;
+        float:left;
+    }
+    textarea {
+            width: 96% !important;
+        }
+    .col-two:not(:first-child) {
+        margin-left:8%;
+    }
+    background: $green;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    bottom: -100vh;
+    right: 0;
+    left:0;
+    transition: bottom 0.8s ease;
+    #contact {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        overflow:hidden;
+        color: white;
+        text-align: center;
+        h3 {
+            font-size: 4rem;
+            -webkit-margin-before: 0em;
+            -webkit-margin-after: 0em;
+        }
+        #lilmessage {
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 50px;
+        }
+    }
+    form {
+
+        p {
+            /*color: whit;*/
+            padding-bottom: 3px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            -webkit-margin-before: 0em !important;
+            -webkit-margin-after: 0em !important;
+        }
+
+        textarea {
+            color: #222;
+            border-radius: 8px;
+            padding: 10px;
+            border: solid 0;
+            resize: none;
+            &:focus {
+                outline:none;
+            }
+        }
+        input {
+            background: white !important;
+            color: #222;
+            padding: 10px 30px;
+            border:none;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+            /*color: $blue;*/
+            border-radius: 10px;
+            &:focus {
+                outline:none;
+                transform: scale(1.05);
+            }
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+    }
+}
+.four-move {
+    bottom: 0;
+    transition: bottom 0.8s ease;
+}
+.row {
+    width: 60%;
+    clear: both !important;
+    margin-left: 20%;
+    float: left;
+}
 
 .bluebar {
     width: 100%;
@@ -605,4 +686,34 @@ h1 {
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: $green !important;
+}
+
+@media screen and (min-width: 975px) {
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: block;
+    }
+}
+@media screen and (max-width: 975px) {
+    #desktop {
+        display: none;
+    }
+    #fp-nav {
+            display: none;
+        }
+    #mobile {
+        display: block;
+        p {
+            position: fixed;
+            width: 320px;
+            color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
