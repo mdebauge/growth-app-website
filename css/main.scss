@@ -538,7 +538,7 @@ textarea {
 .four {
     position: relative;
     .row {
-        width: 550px;
+        width: 650px;
         margin: 0;
         margin-bottom: 10px;
 
@@ -551,6 +551,10 @@ textarea {
     textarea {
             width: 96% !important;
         }
+    .message {
+    	margin-top: 2rem;
+    	margin-left: -5px;
+    }
     .col-two:not(:first-child) {
         margin-left:8%;
     }
@@ -571,8 +575,10 @@ textarea {
         margin-right: -50%;
         transform: translate(-50%, -50%);
         overflow:hidden;
-        color: white;
+        color: #1D2D63;
         text-align: center;
+        //border: 4px solid #1D2D63;
+        padding: 1.5rem;
         h3 {
             font-size: 4rem;
             -webkit-margin-before: 0em;
@@ -582,6 +588,7 @@ textarea {
             width: 70%;
             margin-left: 15%;
             margin-bottom: 50px;
+            margin-top: 0;
         }
     }
     form {
@@ -599,32 +606,52 @@ textarea {
         }
 
         textarea {
-            color: #222;
-            border-radius: 8px;
-            padding: 10px;
-            border: solid 0;
+            color: #1D2D63;
+            font-weight: bold;
+            background: transparent;
+            padding: 5px;
+            border: 0px solid transparent;
+            border-bottom: 2px solid #1D2D63;
             resize: none;
             &:focus {
                 outline:none;
             }
+
         }
         input {
-            background: white !important;
-            color: #222;
-            padding: 10px 30px;
-            border:none;
-            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+        	margin-top: 1rem;
+            background: transparent!important;
+            color: #1D2D63;
+            font-weight: bold;
+            padding: 10px 40px;
+            border:2px solid #1D2D63;
+            //box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
             /*color: $blue;*/
-            border-radius: 10px;
+            border-radius: 25px;
             &:focus {
                 outline:none;
                 transform: scale(1.05);
             }
             &:hover {
-                transform: scale(1.04);
+                //transform: scale(1.04);
+                background: #1D2D63!important;
+                color: $green;
+                transition: all 0.25s ease;
             }
         }
     }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1D2D63;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $blue;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $blue;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $blue;
 }
 .four-move {
     bottom: 0;

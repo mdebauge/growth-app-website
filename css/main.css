@@ -571,7 +571,7 @@ textarea {
   -webkit-transition: bottom 0.8s ease;
   transition: bottom 0.8s ease; }
   .four .row {
-    width: 550px;
+    width: 650px;
     margin: 0;
     margin-bottom: 10px;
     clear: both; }
@@ -580,6 +580,9 @@ textarea {
     float: left; }
   .four textarea {
     width: 96% !important; }
+  .four .message {
+    margin-top: 2rem;
+    margin-left: -5px; }
   .four .col-two:not(:first-child) {
     margin-left: 8%; }
   .four #contact {
@@ -591,8 +594,9 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     overflow: hidden;
-    color: white;
-    text-align: center; }
+    color: #1D2D63;
+    text-align: center;
+    padding: 1.5rem; }
     .four #contact h3 {
       font-size: 4rem;
       -webkit-margin-before: 0em;
@@ -600,7 +604,8 @@ textarea {
     .four #contact #lilmessage {
       width: 70%;
       margin-left: 15%;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      margin-top: 0; }
   .four form p {
     /*color: whit;*/
     padding-bottom: 3px;
@@ -612,28 +617,49 @@ textarea {
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important; }
   .four form textarea {
-    color: #222;
-    border-radius: 8px;
-    padding: 10px;
-    border: solid 0;
+    color: #1D2D63;
+    font-weight: bold;
+    background: transparent;
+    padding: 5px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid #1D2D63;
     resize: none; }
     .four form textarea:focus {
       outline: none; }
   .four form input {
-    background: white !important;
-    color: #222;
-    padding: 10px 30px;
-    border: none;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    background: transparent !important;
+    color: #1D2D63;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid #1D2D63;
     /*color: $blue;*/
-    border-radius: 10px; }
+    border-radius: 25px; }
     .four form input:focus {
       outline: none;
       -webkit-transform: scale(1.05);
               transform: scale(1.05); }
     .four form input:hover {
-      -webkit-transform: scale(1.04);
-              transform: scale(1.04); }
+      background: #1D2D63 !important;
+      color: #20F288;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #1D2D63; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3D61FE; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3D61FE; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #3D61FE; }
 
 .four-move {
   bottom: 0;
