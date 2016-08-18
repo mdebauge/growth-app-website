@@ -536,6 +536,16 @@ textarea {
     }
 }
 .four {
+    #contact-x {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width: 50px;
+        padding: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
     position: relative;
     .row {
         width: 650px;

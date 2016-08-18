@@ -43,6 +43,10 @@ $(document).ready(function() {
     });
 });
 
+$('#contact-x').click(function(){
+    $.fn.fullpage.moveSectionUp();
+});
+
 
 $('#contact').click(function() {
     $('.contact-form').addClass('move-contact-form');

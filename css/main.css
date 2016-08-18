@@ -570,6 +570,14 @@ textarea {
   left: 0;
   -webkit-transition: bottom 0.8s ease;
   transition: bottom 0.8s ease; }
+  .four #contact-x {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 50px;
+    padding: 1rem; }
+    .four #contact-x:hover {
+      cursor: pointer; }
   .four .row {
     width: 650px;
     margin: 0;
