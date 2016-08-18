@@ -598,6 +598,7 @@ textarea {
             -webkit-margin-after: 0em;
         }
         #lilmessage {
+            font-weight: bold;
             width: 70%;
             margin-left: 15%;
             margin-bottom: 50px;
@@ -668,7 +669,7 @@ textarea {
     }
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #1D2D63;
+  color: $blue;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: $blue;

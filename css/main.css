@@ -612,6 +612,7 @@ textarea {
       -webkit-margin-before: 0em;
       -webkit-margin-after: 0em; }
     .four #contact #lilmessage {
+      font-weight: bold;
       width: 70%;
       margin-left: 15%;
       margin-bottom: 50px;
@@ -666,7 +667,7 @@ textarea {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #1D2D63; }
+  color: #3D61FE; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
