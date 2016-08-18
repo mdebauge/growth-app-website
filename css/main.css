@@ -560,7 +560,7 @@ textarea {
 
 .four {
   position: relative;
-  background: #20F288;
+  background: white;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -660,14 +660,14 @@ textarea {
               transform: scale(1.05); }
     .four form input:hover {
       background: #1D2D63 !important;
-      color: #20F288;
-      border-color: #20F288;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease; }
+      color: white;
+      border-color: white;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #3D61FE; }
+  color: #1D2D63; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */

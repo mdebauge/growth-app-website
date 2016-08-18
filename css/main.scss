@@ -571,7 +571,7 @@ textarea {
     .col-two:not(:first-child) {
         margin-left:8%;
     }
-    background: $green;
+    background: white;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -661,15 +661,15 @@ textarea {
             &:hover {
                 //transform: scale(1.04);
                 background: #1D2D63!important;
-                color: $green;
-                border-color: $green;
-                transition: all 0.25s ease;
+                color: white;
+                border-color: white;
+                transition: all 0.3s ease;
             }
         }
     }
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: $blue;
+  color: #1D2D63;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: $blue;
