@@ -581,8 +581,10 @@ textarea {
   .four .row {
     width: 650px;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     clear: both; }
+  .four .form-row {
+    margin-bottom: 60px; }
   .four .col-two {
     width: 45%;
     float: left; }
@@ -595,7 +597,6 @@ textarea {
     margin-left: 8%; }
   .four #contact {
     position: absolute;
-    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -606,7 +607,8 @@ textarea {
     text-align: center;
     padding: 1.5rem; }
     .four #contact h3 {
-      font-size: 4rem;
+      font-size: 3.75rem;
+      color: #3D61FE;
       -webkit-margin-before: 0em;
       -webkit-margin-after: 0em; }
     .four #contact #lilmessage {
@@ -614,6 +616,14 @@ textarea {
       margin-left: 15%;
       margin-bottom: 50px;
       margin-top: 0; }
+    .four #contact #copyright p {
+      margin: 0.25rem;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 0.75rem; }
+    .four #contact #copyright img {
+      margin-top: 1.5rem;
+      width: 125px;
+      padding: 0.5rem; }
   .four form p {
     /*color: whit;*/
     padding-bottom: 3px;
@@ -650,6 +660,7 @@ textarea {
     .four form input:hover {
       background: #1D2D63 !important;
       color: #20F288;
+      border-color: #20F288;
       -webkit-transition: all 0.25s ease;
       transition: all 0.25s ease; }
 
